@@ -1,0 +1,12 @@
+﻿@* Explicit directive declaration of Model class  *@
+@model Vidly.Models.Movie
+
+@{
+    //title of page displayed in browser
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Type of View is DYNAMIC !a movie *@
+<h2>@Model.Name</h2>
+
